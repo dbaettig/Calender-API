@@ -1,0 +1,117 @@
+#infoElement {
+  display: flex;
+  justify-content: center;
+}
+
+.days {
+  background-color: white;
+  text-align: left;
+  padding: 40px;
+  margin-top: 50px;
+  -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+#content {
+  height: 100vh;
+  text-align: center;
+  background-color: #F2F2F2;
+  margin: 50px;
+}
+
+.searchWrap {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 250px;
+  font-size: 1em;
+  font-style: italic;
+}
+
+#addButton {
+  margin-left: 10px;
+  width: 80px;
+  color: black;
+  background: white;
+  border: none;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  padding-top: 50px;
+  -webkit-animation: color-change-5x 20s linear infinite alternate both;
+  animation: color-change-5x 20s linear infinite alternate both;
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.6em;
+}
+
+li {
+  padding-bottom: 10px;
+  list-style: none;
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#removeButton {
+  background-color: red;
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    color: #19dcea;
+  }
+  25% {
+    color: #b22cff;
+  }
+  50% {
+    color: #ea2222;
+  }
+  75% {
+    color: #f5be10;
+  }
+  100% {
+    color: #3bd80d;
+  }
+}
+
+@keyframes color-change-5x {
+  0% {
+    color: #19dcea;
+  }
+  25% {
+    color: #b22cff;
+  }
+  50% {
+    color: #ea2222;
+  }
+  75% {
+    color: #f5be10;
+  }
+  100% {
+    color: #3bd80d;
+  }
+}
+
+@-webkit-keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(-8px);
+    transform: translateX(-8px) translateY(-8px);
+  }
+}

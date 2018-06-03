@@ -15,7 +15,7 @@ search.addEventListener('change', function () {
     fetchCalender();
 
     function fetchCalender(getDate) {
-        fetch('http://api.dryg.net/dagar/v2.1/2018')
+        fetch('https://api.dryg.net/dagar/v2.1/2018')
 
             .then(function (response) {
                 return response.json();
@@ -33,14 +33,6 @@ search.addEventListener('change', function () {
 
 
     function displayCalender(calender) {
-        //addButton.addEventListener('click', function(){    
-        //    removeButton.addEventListener('click', function(){
-        //        content.removeChild(infoElement);
-        //    var removeButton = document.createElement('button');
-        //        const name = document.createTextNode("exit");
-        //    removeButton.id = "removeButton";
-        //    removeButton.appendChild(name);
-
 
         let info = '';
         for (var i = 0; i < calender.dagar.length; i++) {
